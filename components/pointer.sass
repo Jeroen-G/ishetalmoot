@@ -1,0 +1,20 @@
+.c-pointer
+    background: $burned
+    display: inline-block
+    height: 36rem
+    position: relative
+    width: 75vw
+
+    &::before
+        border-left: 18rem solid $burned
+        border-top: 18rem solid transparent
+        border-bottom: 18rem solid transparent
+        content: ""
+        height: 0
+        left: 75vw
+        position: absolute
+        top: 0
+        width: 0
+
+    &__content
+        padding: 5rem 10rem
