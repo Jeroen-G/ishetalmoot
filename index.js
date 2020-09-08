@@ -41,3 +41,23 @@ function getTimeRemaining(endtime) {
 
 var deadline = new Date(Date.parse('2022-07-18'));
 initializeClock('countdown', deadline);
+
+function randomGiphy(id) {
+  var canvas = document.getElementById(id);
+  var myArray = [
+    'https://media.giphy.com/media/tXL4FHPSnVJ0A/source.gif',
+    'https://media.giphy.com/media/l0HlBO7eyXzSZkJri/source.gif',
+    'https://media.giphy.com/media/L1Wmga4CDCKKpT8jAJ/source.gif',
+    'https://media.giphy.com/media/o5oLImoQgGsKY/source.gif',
+    'https://media.giphy.com/media/VtUrqIbEU2tuo/giphy.gif',
+    'https://media.giphy.com/media/oT7ATDykMidsk/source.gif',
+    'https://media.giphy.com/media/26ufoOsmvqB64u4h2/source.gif',
+    'https://media.giphy.com/media/26uf1gRfKr51v7F8k/source.gif',
+    'https://media.giphy.com/media/hiu4RJvbEBUVq/source.gif',
+    'https://media.giphy.com/media/SWVzkIlHdEckF81gnA/source.gif',
+  ];
+  var random = Math.floor(Math.random() * myArray.length);
+  canvas.src = myArray[random];
+}
+
+randomGiphy("random-giphy");
