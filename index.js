@@ -17,6 +17,11 @@ function getTimeRemaining(endtime) {
 
   function initializeClock(id, endtime) {
     var clock = document.getElementById(id);
+
+    if (document.getElementById(id) === null) {
+      return;
+    }
+
     var daysSpan = clock.querySelector('.days');
     var hoursSpan = clock.querySelector('.hours');
     var minutesSpan = clock.querySelector('.minutes');
@@ -39,11 +44,18 @@ function getTimeRemaining(endtime) {
     var timeinterval = setInterval(updateClock, 1000);
   }
 
-var deadline = new Date(Date.parse('2022-07-18'));
-initializeClock('countdown', deadline);
+var opening = new Date(Date.parse('2022-07-18'));
+var inschrijnving = new Date(Date.parse('2020-11-01'));
+initializeClock('countdown-opening', opening);
+initializeClock('countdown-inschrijving', inschrijnving);
 
 function randomGiphy(id) {
   var canvas = document.getElementById(id);
+
+  if (document.getElementById(id) === null) {
+    return;
+  }
+
   var myArray = [
     'https://media.giphy.com/media/tXL4FHPSnVJ0A/source.gif',
     'https://media.giphy.com/media/l0HlBO7eyXzSZkJri/source.gif',
