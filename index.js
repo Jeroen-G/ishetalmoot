@@ -1,4 +1,4 @@
-console.log('Hoi! Wil je ook gave dingen maken? \n https://enrise.com of email Jeroen: jgroenendijk@enrise.com');
+console.log('Hoi! Wil je ook gave dingen maken? \n https://enrise.com');
 
 function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
