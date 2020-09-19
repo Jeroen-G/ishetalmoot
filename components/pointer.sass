@@ -1,9 +1,11 @@
 .c-pointer
     background: $burned
-    display: inline-block
+    display: inline-flex
     height: 36rem
     position: relative
     width: 75vw
+    align-items: center
+    justify-content: center
 
     &::before
         border-left: 18rem solid $burned
@@ -17,7 +19,8 @@
         width: 0
 
     &__content
-        padding: 5rem 10rem
+        margin-left: 2rem
+        margin-right: -2rem
 
     img
         max-height: 20rem
