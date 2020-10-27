@@ -45,9 +45,9 @@ function getTimeRemaining(endtime) {
   }
 
 var opening = new Date(Date.parse('2022-07-18'));
-var inschrijnving = new Date(Date.parse('2020-11-01'));
+var inschrijving = new Date(Date.parse('2021-01-01'));
 initializeClock('countdown-opening', opening);
-initializeClock('countdown-inschrijving', inschrijnving);
+initializeClock('countdown-inschrijving', inschrijving);
 
 function randomGiphy(id) {
   var canvas = document.getElementById(id);
