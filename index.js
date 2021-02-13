@@ -45,7 +45,7 @@ function getTimeRemaining(endtime) {
   }
 
 var opening = new Date(Date.parse('2022-07-18'));
-var inschrijving = new Date(Date.parse('2021-01-05'));
+var inschrijving = new Date(Date.parse('2021-02-18'));
 initializeClock('countdown-opening', opening);
 initializeClock('countdown-inschrijving', inschrijving);
 
