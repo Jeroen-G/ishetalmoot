@@ -44,8 +44,8 @@ function getTimeRemaining(endtime) {
     var timeinterval = setInterval(updateClock, 1000);
   }
 
-var opening = new Date(Date.parse('2022-07-18'));
-var inschrijving = new Date(Date.parse('2021-02-18T20:22'));
+var opening = new Date(Date.parse('2025-07-25'));
+var inschrijving = new Date(Date.parse('2024-09-01T12:00'));
 initializeClock('countdown-opening', opening);
 initializeClock('countdown-inschrijving', inschrijving);
 
